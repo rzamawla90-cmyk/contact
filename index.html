@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zyraa</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="icon" type="image/png" href="Pink Retro Y2K Logo.png" />
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/1014f1468c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="my-profile-img.jpg"alt="profile" data-aos="zoom-in" data-aos-delay="50">
+        <h1  data-aos="fade-right" data-aos-delay="100">Reza Mawla</h1>
+        <p  data-aos="fade-up" data-aos-delay="120">Simple • Elegant • Trusted Store</p>
+    </section>
+
+    <!-- MENU -->
+    <section class="grid">
+
+        <a class="card" href="https://wa.me/628132225515" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fa-brands fa-whatsapp" ></i>
+            <h3>WhatsApp</h3>
+            <span>Chat langsung</span>
+        </a>
+
+        <a class="card" href="https://instagram.com/rzamawla.11" data-aos="zoom-in" data-aos-delay="250">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>Personal Instagram</h3>
+            <span>Follow & update</span>
+        </a>
+
+         <a class="card" href="https://instagram.com/level.updailyid" data-aos="zoom-in" data-aos-delay="250">
+            <i class="fa-brands fa-instagram"></i>
+            <h3>Branding Instagram</h3>
+            <span>Follow & update</span>
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 ZaaStore</p>
+    <p>Design by ZaaMawla</p>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 800,
+    once: true,
+    easing: 'ease-in-out'
+});
+</script>
+
+<script>
+  const numStars = 300; // lebih banyak
+  for(let i = 0; i < numStars; i++){
+    const star = document.createElement('div');
+    star.classList.add('star');
+    
+    // posisi horizontal acak
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    
+    // posisi vertikal acak dari atas (-100vh supaya muncul bertahap)
+    star.style.top = Math.random() * -window.innerHeight + 'px';
+    
+    // ukuran acak
+    const size = Math.random() * 2 + 1; // 1px sampai 3px
+    star.style.width = star.style.height = size + 'px';
+    
+    // kecepatan acak (lebih bervariasi)
+    star.style.animationDuration = (Math.random() * 5 + 3) + 's';
+    
+    // delay acak supaya jatuh tidak bersamaan
+    star.style.animationDelay = Math.random() * 5 + 's';
+    
+    document.body.appendChild(star);
+  }
+</script>
+
+</body>
+</html>
